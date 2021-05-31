@@ -11,6 +11,7 @@ while result < 1000:
 
 print(three)
 
+#5의 배수 구하기
 five=[]
 result=0
 while result < 1000:
@@ -19,11 +20,14 @@ while result < 1000:
 
 print(five)
 
+#두 리스트 합치기
 total=three+five
+
+#모든 요소값 더하기
 result=0
 for i in total :
   result=result+i
 
 print(result)
 
-#5의 배수 구하기
+#266333 -->정답확인못함
