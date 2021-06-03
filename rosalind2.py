@@ -1,5 +1,12 @@
-DNA_1="GAGCCTACTAACGGGAT"
-DNA_2="CATCGTAATGACGGCCT"
+'''
+Counting Point Mutations
+'''
+
+with open("rosalind_hamm.txt","r") as f:
+  lines=f.readlines()
+
+DNA_1=lines[0]
+DNA_2=lines[1]
 
 result=0
 if len(DNA_1)==len(DNA_2):

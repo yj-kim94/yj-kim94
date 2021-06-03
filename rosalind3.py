@@ -1,3 +1,8 @@
+'''
+Translating RNA into Protein
+'''
+
+#convert codon table into dictionary
 with open("rosalind3.txt","r") as f:
     lines=f.readlines()
 
@@ -18,7 +23,11 @@ for i in codon:
         amino_acid[i[11:14]]=i[14]
         amino_acid[i[15:18]]=i[18]
 
-RNA="AUGGCCAUGGCGCCCAGAACUGAGAUCAAUAGUACCCGUAUUAACGGGUGA"
+#translation
+with open("rosalind_prot.txt","r") as f:
+  line=f.readline()
+RNA=line
+
 protein=""
 start=RNA.find("AUG")
 RNA=RNA[start:]
