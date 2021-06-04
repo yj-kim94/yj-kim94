@@ -3,11 +3,7 @@ Finding a Motif in DNA
 '''
 
 with open("rosalind_subs.txt","r") as f :
-    lines=f.readlines()
-
-DNA=[]
-for i in range(len(lines)):
-    DNA.append(lines[i].strip())
+    DNA=f.readlines()
 
 result=""
 end=len(DNA[1])
