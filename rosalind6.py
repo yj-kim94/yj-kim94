@@ -1,3 +1,7 @@
+'''
+Finding a Shared Motif
+'''
+
 with open("rosalind_lcsm.txt","r") as f :
     lines=f.readlines()
 
@@ -7,7 +11,6 @@ for i in range(len(lines)):
         str_dict[lines[i].strip()]=""
         n=1
         while lines[i+n][0]!=">":
-            print(lines[i+n],end="")
             str_dict[lines[i].strip()]+=lines[i+n].strip()
             n+=1
             if len(lines)==(i+n):
